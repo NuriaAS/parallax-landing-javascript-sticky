@@ -1,0 +1,88 @@
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="main.css">
+</head>
+<body>
+    <section>
+        <img src="edificios.png" alt="" id="edificios">
+        <img src="mar.png" alt="" id="mar">
+        <h2 id="text">Vacaciones</h2>
+    </section>
+    <main id="main">
+        <header id="header">
+            <h1>Vacaciones</h1>
+            <nav>
+                <h4 class="nav-title">Aquí</h4>
+                <h4 class="nav-title">Allá</h4>
+                <h4 class="nav-title">Acullá</h4>
+            </nav>
+        </header>
+        <article class="intro">
+            <h3 class="subtitle">Suspendisse tristique urna quis ipsum aliquet</h3>
+            <p class="intro-text">Maecenas libero libero, dictum vel ullamcorper a, consectetur a sem. Nunc sollicitudin quis erat id porttitor. Nunc turpis nunc, viverra id egestas id, sodales sodales dui. Suspendisse posuere sit amet tortor a pharetra. In eget dignissim massa. Duis non ligula ut dolor sodales tempus. Pellentesque vel posuere nulla. Ut sodales metus a ornare sagittis. </p>
+        </article>
+        <article class="gallery">
+            <h3 class="gallery-title">Suspendisse tristique urna quis ipsum aliquet</h3>
+            <div class="grid-container">
+                <img src="" alt="" class="grid-container-img">
+                <img src="" alt="" class="grid-container-img">
+                <img src="" alt="" class="grid-container-img">
+                <img src="" alt="" class="grid-container-img">
+                <img src="" alt="" class="grid-container-img">
+                <img src="" alt="" class="grid-container-img">
+            </div>
+           
+        </article>
+        <article class="content">
+            <p class="content-text">Maecenas libero libero, dictum vel ullamcorper a, consectetur a sem. Nunc sollicitudin quis erat id porttitor. Nunc turpis nunc, viverra id egestas id, sodales sodales dui. Suspendisse posuere sit amet tortor a pharetra. In eget dignissim massa. Duis non ligula ut dolor sodales tempus. Pellentesque vel posuere nulla. Ut sodales metus a ornare sagittis.
+                <br><br>
+            Maecenas libero libero, dictum vel ullamcorper a, consectetur a sem. Nunc sollicitudin quis erat id porttitor. Nunc turpis nunc, viverra id egestas id, sodales sodales dui. Suspendisse posuere sit amet tortor a pharetra. In eget dignissim massa. Duis non ligula ut dolor sodales tempus. Pellentesque vel posuere nulla. Ut sodales metus a ornare sagittis.  </p>
+            <p class="content-text">Maecenas libero libero, dictum vel ullamcorper a, consectetur a sem. Nunc sollicitudin quis erat id porttitor. Nunc turpis nunc, viverra id egestas id, sodales sodales dui. Suspendisse posuere sit amet tortor a pharetra. In eget dignissim massa. Duis non ligula ut dolor sodales tempus. Pellentesque vel posuere nulla. Ut sodales metus a ornare sagittis.
+                <br><br>
+            Maecenas libero libero, dictum vel ullamcorper a, consectetur a sem. Nunc sollicitudin quis erat id porttitor. Nunc turpis nunc, viverra id egestas id, sodales sodales dui. Suspendisse posuere sit amet tortor a pharetra. In eget dignissim massa. Duis non ligula ut dolor sodales tempus. Pellentesque vel posuere nulla. Ut sodales metus a ornare sagittis.  </p>
+           
+        </article>
+        <article class="content">
+            <div class="content-container">
+                <p class="content-text">Maecenas libero libero, dictum vel ullamcorper a, consectetur a sem. Nunc sollicitudin quis erat id porttitor. Nunc turpis nunc, viverra id egestas id, sodales sodales dui. Suspendisse posuere sit amet tortor a pharetra.
+                </p>
+                <img src="" alt="">
+            </div>
+           
+            <p class="content-text">Maecenas libero libero, dictum vel ullamcorper a, consectetur a sem. Nunc sollicitudin quis erat id porttitor. Nunc turpis nunc, viverra id egestas id, sodales sodales dui. Suspendisse posuere sit amet tortor a pharetra. In eget dignissim massa. Duis non ligula ut dolor sodales tempus. Pellentesque vel posuere nulla. Ut sodales metus a ornare sagittis.
+                <br><br>
+            Maecenas libero libero, dictum vel ullamcorper a, consectetur a sem. Nunc sollicitudin quis erat id porttitor. Nunc turpis nunc, viverra id egestas id, sodales sodales dui. Suspendisse posuere sit amet tortor a pharetra. In eget dignissim massa. Duis non ligula ut dolor sodales tempus. Pellentesque vel posuere nulla. Ut sodales metus a ornare sagittis.  </p>
+        </article>
+    </main>
+    <footer>
+        <div class="footer-content">
+            <p class="footer-content-text">
+                Maecenas libero libero, dictum vel ullamcorper a, consectetur a sem. Nunc sollicitudin quis erat id porttitor.
+            </p>
+        </div>
+        <div class="footer-content-link">
+            <a href="">Instagram</a>
+            <a href="">Facebook</a>
+            <a href="">Tweeter</a>
+        </div>
+    </footer>
+    <script type="text/javascript">
+        let edificios = document.getElementById("edificios");
+        let mar = document.getElementById("mar");
+        let text = document.getElementById("text");
+        let main = document.getElementById("main");
+        
+        window.addEventListener('scroll', function() {
+            var value = window.scrollY;
+            edificios.style.top = value * 0.25 + 'px';
+            mar.style.top = value * -0.15 + 'px';
+            text.style.top = value * -0.35 + 'px';
+            main.style.top = value * 1 + 'px';
+            
+        })
+    </script>
+</body>
+</html>
