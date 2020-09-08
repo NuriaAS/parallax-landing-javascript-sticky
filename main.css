@@ -161,3 +161,16 @@ footer {
     padding-left: 5%;
 }
 
+@media only screen and (max-width: 600px) {
+   
+    .intro, .content {
+        flex-direction: column;
+        top: 0;
+    }
+    .subtitle {
+        width: 70%;
+    }
+    .content-text, .last-content {
+        margin-top: 0;
+    }
+  }
