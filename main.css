@@ -48,13 +48,11 @@ header {
     height: 100px;
     align-items: center;
     z-index: 3;
-    
 }
 nav {
     display: flex;
     width: 30%;
     justify-content: space-between;
-   
 }
 
 #main {
@@ -74,7 +72,6 @@ article {
 .subtitle, .intro-text, .content-text{
     padding-right: 5%;
     padding-left: 5%;
-    margin-top: 10%;
 }
 .subtitle {
     width: 30%;
@@ -93,10 +90,7 @@ article {
     flex-direction: column;
 }
 .gallery-title {
-    text-align: center;
-    margin-top: 200px;
-    
-    
+    text-align: center; 
 }
 .grid-container {
     width: 80%;
@@ -106,15 +100,12 @@ article {
     grid-template-rows: 1fr 1fr;
     gap: 15px;
     margin: auto;
-   
-   
 }
 .grid-container-img {
     background-color: #f3d163;
     width: 100%;
     height: 70%;
 }
-
 .content {
     background-color: #f3d163;
     width: 100%;
@@ -122,19 +113,16 @@ article {
 }
 .content-container {
     padding-left: 5%;
-    
-
 }
-.content-text {
-    margin-top: 400px;
+.content-text, .gallery-title {
+    margin-top: 200px;
 }
 .last-content{
-    margin-top: 600px;
+    margin-top: 400px;
 }
 .last-content-color {
     background-color:rgb(164, 238, 238);
 }
-
 footer {
     height: 20vh;
     display: flex;
@@ -147,30 +135,76 @@ footer {
 }
 .footer-content-text {
     width: 30%;
-  
 }
 .footer-content-link {
     display: flex;
     flex-direction: column;
     padding-right: 5%;
+    text-align: right;
 }
-.footer-content-link a {
+.footer-content-link a, nav a {
     color: black;
 }
 .footer-content {
     padding-left: 5%;
 }
 
+@media only screen and (max-width: 890px) {
+    #text {
+        font-size: 4.5rem;
+        margin-top: -30px;
+    }
+}
+
 @media only screen and (max-width: 600px) {
-   
+    p {
+        font-size: 0.85rem;
+    }
+    #header {
+        flex-direction: column;
+        padding-top: 5%;
+        padding-bottom: 5%;
+        height: 75px;
+        background-color: #f3d163;
+        width: 100%;
+    }
+    #text {
+        font-size: 3.5rem;
+        margin-top: -24px;
+    }
+    nav {
+        width: 45%;
+    }
     .intro, .content {
         flex-direction: column;
         top: 0;
     }
+    .intro-text {
+        margin-top: 5%;
+    }
     .subtitle {
         width: 70%;
     }
+    .content {
+        height: auto;
+        padding-top: 15%;
+        padding-bottom: 15%;
+        position: relative;
+    }
+   .last-content-color {
+       height: 80vh;
+   }
     .content-text, .last-content {
         margin-top: 0;
     }
+    .content-container {
+        width: 100%;
+        padding-left: 0;
+    }
+    .footer-content-text {
+        width: 70%;
+        font-size: 0.75rem;
+    }
+
   }
+ 
